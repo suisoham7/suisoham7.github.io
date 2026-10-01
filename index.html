@@ -1,177 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soham Ray | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: white;
-    scroll-behavior: smooth;
-}
+    <title>Soham Ray | Robotics & AI Student</title>
 
-/* NAVBAR */
-nav {
-    position: fixed;
-    width: 100%;
-    background: #020617;
-    padding: 15px;
-    text-align: center;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-nav a {
-    color: #38bdf8;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 120px 20px 60px;
-}
+        /* NAVBAR */
 
-header img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    border: 4px solid #38bdf8;
-    object-fit: cover;
-}
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #020617;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
 
-header h1 {
-    margin-top: 20px;
-    font-size: 42px;
-}
+        nav a {
+            color: #38bdf8;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-header p {
-    color: #38bdf8;
-    font-size: 20px;
-}
+        nav a:hover {
+            color: white;
+        }
 
-/* SECTION */
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-}
+        /* HERO */
 
-h2 {
-    border-bottom: 2px solid #38bdf8;
-    padding-bottom: 10px;
-}
+        header {
+            text-align: center;
+            padding: 140px 20px 80px;
+        }
 
-/* SKILLS */
-.skills span {
-    display: inline-block;
-    background: #1e293b;
-    padding: 10px 15px;
-    margin: 6px;
-    border-radius: 20px;
-}
+        header img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            object-fit: cover;
+        }
 
-/* PROJECT */
-.project {
-    background: #1e293b;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 10px;
-}
+        header h1 {
+            margin: 20px 0 5px;
+            font-size: 44px;
+        }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 12px 18px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 6px;
-    text-decoration: none;
-    margin-top: 10px;
-}
+        header p {
+            color: #38bdf8;
+            font-size: 21px;
+            margin: 5px 0 20px;
+        }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-}
-</style>
+        .intro {
+            max-width: 700px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        /* BUTTONS */
+
+        .btn {
+            display: inline-block;
+            padding: 11px 18px;
+            margin: 10px 5px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 70px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #38bdf8;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* ABOUT */
+
+        .about-text {
+            color: #cbd5e1;
+        }
+
+        /* SKILLS */
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 10px 16px;
+            margin: 6px;
+            border-radius: 20px;
+            border: 1px solid #334155;
+        }
+
+        /* EDUCATION */
+
+        .education {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* PROJECTS */
+
+        .project {
+            background: #1e293b;
+            padding: 22px;
+            margin-top: 18px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        /* CONTACT */
+
+        .contact-text {
+            color: #cbd5e1;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            header img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#personal">Personal</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- NAVIGATION -->
 
-<header>
-    <img src="profile.jpg" alt="Soham Ray">
-    <h1>Soham Ray</h1>
-    <p>Robotics Engineer | Robotics & AI Engineer</p>
-</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<section id="personal">
-    <h2>Personal Details</h2>
-    <p><b>Name:</b> Soham Ray</p>
-    <p><b>Father's Name:</b> Sudhir Ray</p>
-    <p><b>Mother's Name:</b> Anindita Ray</p>
-    <p><b>Date of Birth:</b> 16 March 2006</p>
-    <p><b>Age:</b> 20</p>
-    <p><b>Blood Group:</b> O+</p>
-    <p><b>Nationality:</b> Indian</p>
-</section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a second-year Robotics and AI student passionate about building intelligent systems 
-        and robotic solutions. I am currently exploring machine learning, embedded systems, 
-        and robotics design through practical projects.
-    </p>
-</section>
+    <!-- HERO SECTION -->
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Machine Learning (Basics)</span>
-        <span>C Programming</span>
-        <span>Java (Basic)</span>
-        <span>HTML</span>
-    </div>
-</section>
+    <header>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Soft Gripper Robot</h3>
-        <p>
-            A soft robotic gripper designed to handle delicate objects using flexible materials 
-            and pneumatic control.
+        <img src="profile.jpg" alt="Soham Ray">
+
+        <h1>Soham Ray</h1>
+
+        <p>B.Tech Robotics & AI Student</p>
+
+        <div class="intro">
+            <p>
+                Exploring Robotics, Artificial Intelligence,
+                Automation and Software Development.
+            </p>
+        </div>
+
+        <a class="btn" href="https://github.com/suisoham7" target="_blank">
+            GitHub
+        </a>
+
+        <a class="btn"
+            href="https://www.linkedin.com/in/soham-ray-b8964a336"
+            target="_blank">
+            LinkedIn
+        </a>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p class="about-text">
+            I am a third-year B.Tech student specializing in Robotics and AI.
+            I am interested in robotics, artificial intelligence,
+            automation and software development.
         </p>
-    </div>
-</section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: suisoham7@gmail.com</p>
+        <p class="about-text">
+            I am currently strengthening my programming and problem-solving
+            skills while learning Data Structures and Algorithms,
+            Machine Learning, Robotics and Software Development.
+        </p>
 
-    <a class="btn" href="https://www.linkedin.com/in/soham-ray-b8964a336" target="_blank">LinkedIn</a>
-    <a class="btn" href="https://github.com/suisoham7" target="_blank">GitHub</a>
-</section>
+    </section>
 
-<footer>
-    <p>© 2026 Soham Ray</p>
-</footer>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <h3>B.Tech in Robotics & Artificial Intelligence</h3>
+
+            <p>
+                Undergraduate Engineering Student
+            </p>
+
+            <p>
+                Currently pursuing 3rd Year
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Skills & Technologies</h2>
+
+        <div class="skills">
+
+            <span>C</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>MATLAB</span>
+            <span>Simulink</span>
+            <span>Git</span>
+            <span>GitHub</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>Projects Coming Soon</h3>
+
+            <p>
+                I am currently working on building practical projects
+                in Robotics, Artificial Intelligence and Software Development.
+                Completed projects will be added here with their
+                documentation and GitHub repositories.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p class="contact-text">
+            I am open to connecting with fellow students,
+            developers and people interested in Robotics and AI.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            suisoham7@gmail.com
+        </p>
+
+        <a class="btn"
+            href="mailto:suisoham7@gmail.com">
+            Email Me
+        </a>
+
+        <a class="btn"
+            href="https://github.com/suisoham7"
+            target="_blank">
+            GitHub
+        </a>
+
+        <a class="btn"
+            href="https://www.linkedin.com/in/soham-ray-b8964a336"
+            target="_blank">
+            LinkedIn
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Soham Ray | Robotics & AI
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
